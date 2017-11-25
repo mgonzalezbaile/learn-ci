@@ -1,7 +1,7 @@
 sudo: true
-language: php
-php:
-- '7.1'
+#language: php
+#php:
+#- '7.1'
 
 script:
   - ARTIFACT_NAME=${TRAVIS_COMMIT_RANGE:0:6}; export ARTIFACT_NAME;
