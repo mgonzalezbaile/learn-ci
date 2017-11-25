@@ -12,7 +12,8 @@ sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
 
 docker-machine create \
   --driver generic \
-  --generic-ip-address=ec2-54-219-128-169.us-west-1.compute.amazonaws.com
+  --generic-ip-address=ec2-54-219-128-169.us-west-1.compute.amazonaws.com \
+  learn-ci
 
  eval $(docker-machine env learn-ci)
 
