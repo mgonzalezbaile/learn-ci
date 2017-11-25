@@ -13,6 +13,7 @@ RUN docker-php-ext-install pdo_mysql \
         ssh \
         libcurl4-openssl-dev \
         unzip \
+        wget \
  && rm -rf /var/lib/apt/lists/*
 
 RUN echo "date.timezone = UTC" > /usr/local/etc/php/php.ini

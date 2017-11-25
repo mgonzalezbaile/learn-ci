@@ -27,8 +27,6 @@ class HomePageAction implements ServerMiddlewareInterface
 
     public function process(ServerRequestInterface $request, DelegateInterface $delegate)
     {
-        throw new \Exception();
-
         if (! $this->template) {
             return new JsonResponse([
                 'welcome' => 'Congratulations! You have installed the zend-expressive skeleton application.',
