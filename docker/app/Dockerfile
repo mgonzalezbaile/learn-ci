@@ -1,4 +1,4 @@
-FROM docker_php:latest
+FROM my_php:latest
 
 COPY . /var/www/html
 
