@@ -6,5 +6,5 @@ docker build -t my_php -f docker/php/Dockerfile .
 docker build -t my_app -f docker/app/Dockerfile .
 docker build -t my_nginx -f docker/nginx/Dockerfile .
 
-docker run --name php my_app curl -s http://getcomposer.org/installer | php
-docker run --name php my_app php composer.phar install
+docker run my_app curl -s http://getcomposer.org/installer | php
+docker run php my_app php composer.phar install
