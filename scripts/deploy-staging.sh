@@ -3,7 +3,6 @@
 set -ev
 printf "Deploy staging $ARTIFACT_NAME\n"
 
-docker tag my_app mgonzalezbaile/my_app
-docker tag my_nginx mgonzalezbaile/my_nginx
-docker push mgonzalezbaile/my_nginx
-docker push mgonzalezbaile/my_app
+echo "aws_access_key_id = $AWS_ACCESS_KEY_ID\n aws_secret_access_key=$AWS_SECRET_ACCESS_KEY" > ~/.aws/credentials
+
+eval $(docker-machine env learn-ci)
