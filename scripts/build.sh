@@ -2,6 +2,7 @@
 
 set -ev
 
+docker build -t my_php -f docker/php/Dockerfile .
 docker build -t my_app -f docker/app/Dockerfile .
 docker build -t my_nginx -f docker/nginx/Dockerfile .
 
